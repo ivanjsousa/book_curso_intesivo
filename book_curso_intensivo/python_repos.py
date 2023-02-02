@@ -11,5 +11,12 @@ print("Status core:", r.status_code)
 response_dict = r.json()
 print("Total repositories:", response_dict['total_count'])
 
-# Processa o resultado
-print(response_dict.keys())
+# Explora informações sobre os repositórios
+repo_dicts = response_dict['items']
+print("Repositories returned:", len(repo_dicts))
+
+# Analisa o primeiro repositório
+repo_dict = repo_dicts[0]
+print("\nkeys:", len(repo_dict))
+for key in sorted(repo_dict.keys()):
+    print(key)
