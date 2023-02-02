@@ -9,6 +9,7 @@ print("Status core:", r.status_code)
 
 # Armazena a resposta da API em uma variável
 response_dict = r.json()
+print("Total repositories:", response_dict['total_count'])
 
 # Processa o resultado
 print(response_dict.keys())
