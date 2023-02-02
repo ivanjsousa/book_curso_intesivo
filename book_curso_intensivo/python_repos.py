@@ -17,7 +17,7 @@ print("Repositories returned:", len(repo_dicts))
 
 print("\nSelected information about each repository:")
 for repo_dict in repo_dicts:
-    print('Name:', repo_dict['name'])
+    print('\nName:', repo_dict['name'])
     print('Owner:', repo_dict['owner']['login'])
     print('Stars:', repo_dict['stargazers_count'])
     print('Repository:', repo_dict['html_url'])
